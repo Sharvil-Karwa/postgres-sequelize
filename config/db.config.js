@@ -1,7 +1,9 @@
+require("dotenv").config();
+
 var config = {
   HOST: "localhost",
-  USER: "postgres",
-  PASSWORD: "12345",
+  USER: process.env.USER,
+  PASSWORD: process.env.PASSWORD,
   DB: "test123",
   dialect: "postgres",
   pool: {
